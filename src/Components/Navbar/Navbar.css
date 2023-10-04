@@ -1,0 +1,23 @@
+/* Navbar styling */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.search-box {
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+
+}
+.add-album-button button {
+    background-color: var(--first-color); 
+    color:var(--first-color); 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
