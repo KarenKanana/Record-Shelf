@@ -36,8 +36,13 @@
   }
   
   /* Global styling here */
+ 
   body {
+    margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color-lighten);
     color: var(--text-color);
-  }
+    line-height: 1.6;
+}
