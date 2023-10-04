@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './style.css';
 import NavBar from './Components/Navbar/Navbar';
 import AlbumList from './Components/AlbumList/AlbumList';
 
