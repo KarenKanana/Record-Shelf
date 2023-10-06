@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
+import AddAlbumForm from '../AddAlbumForm/AddAlbumForm';
 
 const NavBar = () => {
+  const [showForm, setShowForm] = useState(false);
+
+  const toggleForm = () => {
+    setShowForm(!showForm);
+  };
+
   return (
     <nav className="navbar">
 
@@ -26,11 +33,11 @@ const NavBar = () => {
 
 <div className='add-button'>
   {/* Add New Album Button */}
-  <button className="add-album-button">
+  <button className="add-album-button" onClick={toggleForm}>
         Add New Album
       </button>
 </div>
-     
+{showForm && <AddAlbumForm />} {/* Display the form conditionally */}
     </nav>
   );
 };
