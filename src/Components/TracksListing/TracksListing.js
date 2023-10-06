@@ -8,7 +8,8 @@ const TracksListing = ({ albumId }) => {
   useEffect(() => {
     const fetchTracks = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/tracks?albumId=${albumId}`); // Filter tracks by albumId
+        const response = await axios.get(`http://localhost:8001/tracks?albumId=${albumId}`); // Filter tracks by albumId
+        console.log (response)
         setTracks(response.data);
       } catch (error) {
         console.error('Error fetching tracks:', error);
@@ -18,15 +19,15 @@ const TracksListing = ({ albumId }) => {
   }, [albumId]); // Include albumId in the dependency array
 
   return (
-    <div className="tracks-listing">
-      <h2>Tracks</h2>
-      <table>
+    <div className="tracks-list">
+      {/* <h2>Tracks</h2> */}
+      <table className='tracks-table'>
         <thead>
           <tr>
             <th>#</th>
             <th>Title</th>
             <th>Length</th>
-            <th>Artist</th>
+            {/* <th>Artist</th> */}
           </tr>
         </thead>
         <tbody>
