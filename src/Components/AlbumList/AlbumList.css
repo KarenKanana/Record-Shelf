@@ -1,47 +1,50 @@
 .album-list {
     margin: 20px;
-  }
+    max-width: 50%;
+    margin: auto;
+   
+}
   
-  .album-list h2 {
+.album-list h2 {
     font-size: 24px;
     margin-bottom: 10px;
-  }
+}
   
-  .album-list ul {
+.album-list ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-  }
+}
   
-  .album-list li {
+.album-list li {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .album-list img {
-    max-width: 100%;
+.album-list img {
+    max-width: 50%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
+}
   
-  .album-list h3 {
+.album-list h3 {
     font-size: 18px;
     margin: 0;
-  }
+}
   
-  .album-list p {
+.album-list p {
     font-size: 14px;
     color: #888;
-  }
+}
   
-  .album-list li button {
+.album-list li button {
     background-color: var(--first-color-dark);
     color: #fff;
     border: none;
@@ -50,8 +53,8 @@
     cursor: pointer;
     margin-top: 10px;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .album-list li button:hover {
+.album-list li button:hover {
     background-color: var(--first-color-lighten);
-  }
+}
