@@ -24,7 +24,7 @@ const AlbumList = () => {
 
     return (
       <div className="album-list">
-        <h2>Albums</h2>
+        {/* /<h2>Albums</h2> */}
         <ul>
           {albums.map((album) => (
             <li key={album.id}>
