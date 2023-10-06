@@ -1,6 +1,6 @@
 /* Navbar styling */
 .navbar {
-    background-color: #B88A67;
+    background-color: var(--first-color);
     color: #fff;
     height: 80px;
     display: flex;
