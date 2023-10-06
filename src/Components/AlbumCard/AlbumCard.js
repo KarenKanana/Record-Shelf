@@ -6,7 +6,9 @@ const AlbumCard = ({ album }) => {
   return (
     <div className="album-card">
       <div className="album-details">
-        <img src={album.imageUrl} alt={album.name} />
+        <div >
+          <img src={album.imageUrl} alt={album.name} className='card-image' />
+          </div>
         <div>
           <h3>{album.name}</h3>
           <p>{album.artist}</p>
@@ -14,7 +16,7 @@ const AlbumCard = ({ album }) => {
         </div>
       </div>
     <div className="tracks-table">
-      <h4>Tracks</h4>
+      {/* <h4>Tracks</h4> */}
       <TracksListing albumId={album.id} /> {/* Pass albumId as a prop */}
     </div>
   </div>
