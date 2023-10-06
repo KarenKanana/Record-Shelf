@@ -5,28 +5,32 @@ const NavBar = () => {
   return (
     <nav className="navbar">
 
-     {/* Search Box */}
-     <div className='search-box'>
-        <input type='text' placeholder='Search' />
-        <button>Search</button>
-      </div>
+    <div className='mid-nav'>
+      {/* Search Box */}
+        <div className='search-box'>
+          <input type='text' placeholder='Search' />
+          <button>Search</button>
+        </div>
 
         {/* Checkboxes */}
-     <div className="filter-options">
-        <label>
-          <input type="checkbox" /> Artist
-        </label>
-        <label>
-          <input type="checkbox" /> Album
-        </label>
-      </div>
+        <div className="filter-options">
+          <label>
+            <input type="checkbox" /> Artist
+          </label>
+          <label>
+            <input type="checkbox" /> Album
+          </label>
+        </div>
+    </div>
     
 
-
-      {/* Add New Album Button */}
-      <button className="add-album-button">
+<div className='add-button'>
+  {/* Add New Album Button */}
+  <button className="add-album-button">
         Add New Album
       </button>
+</div>
+     
     </nav>
   );
 };
