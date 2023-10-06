@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "../Navbar/Navbar";
-import AlbumCard from '../AlbumCard/AlbumCard';
+import albums from 'albums.js'; //import dummy data
+
 
 //a function that renders list of albums
 const AlbumList = () => {
@@ -19,5 +19,5 @@ const AlbumList = () => {
       </div>
     );
   };
-  
+
 export default AlbumList;
