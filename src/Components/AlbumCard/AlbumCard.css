@@ -1,10 +1,14 @@
 .album-card {
-    background-color: #fff;
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
-    display: flex; 
+    display: flex;
+    flex-direction: column;  
     align-items: center; 
+    
+   
+
   }
   
   .album-card img {
@@ -40,4 +44,10 @@
   
   .album-card button:hover {
     background-color: var(--first-color-lighten);
+  }
+  
+  .album-details {
+    /* background-color: green; */
+    display: flex;
+    
   }
