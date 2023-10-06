@@ -1,5 +1,5 @@
 .tracks-list {
-    background-color: red;
+    /* background-color: red; */
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
@@ -32,3 +32,21 @@
     font-size: 18px;
     font-weight: bold;
   }
+  .tracks-table{
+    width: 100%;
+
+  }
+  .tracks-table th,
+.tracks-table td {
+  border: 1px solid #ccc; /* Add borders to table header and data cells */
+  padding: 8px; /* Add padding to improve readability */
+  text-align: left; /* Align text to the left within cells */
+}
+
+.tracks-table th {
+  background-color: var(--first-color); /* Background color for table header */
+}
+
+.tracks-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background color */
+}
