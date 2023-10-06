@@ -1,5 +1,6 @@
 import React from "react";
 import albums from 'albums.js'; //import dummy data
+import './AlbumList.css' //import styling 
 
 
 //a function that renders list of albums
