@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import AddAlbumForm from '../AddAlbumForm/AddAlbumForm';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [showForm, setShowForm] = useState(false);
@@ -31,13 +32,13 @@ const NavBar = () => {
     </div>
     
 
-<div className='add-button'>
-  {/* Add New Album Button */}
-  <button className="add-album-button" onClick={toggleForm}>
-        Add New Album
-      </button>
-</div>
-{showForm && <AddAlbumForm />} {/* Display the form conditionally */}
+    <div className='add-button'>
+        {/* Add New Album Button */}
+        {/* Use Link for navigation */}
+        <Link to="/add-album" className="add-album-button">
+                Add New Album
+              </Link>
+    </div>
     </nav>
   );
 };
