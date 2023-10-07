@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import AlbumCard from '../src/Components/AlbumCard';
+import AlbumCard from './AlbumCard';
 
 const mockAlbum = {
   id: 1,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import AlbumList from '../src/Components/AlbumList';
+import AlbumList from './AlbumList';
 
 const mockAlbums = [
   { id: 1, name: 'Test Album 1', imageUrl: 'image1.jpg', artist: 'Artist 1' },

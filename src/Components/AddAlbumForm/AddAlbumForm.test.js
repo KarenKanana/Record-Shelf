@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, waitFor } from '@testing-library/react';
-import AddAlbumForm from '../src/Components/AddAlbumForm/AddAlbumForm';
+import AddAlbumForm from './AddAlbumForm';
 
 describe('AddAlbumForm Component', () => {
   it('renders correctly', () => {
