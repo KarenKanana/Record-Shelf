@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './AddAlbumForm.css'
+import { useNavigate } from 'react-router-dom';
 
 const AddAlbumForm = () => {
+    const navigate = useNavigate();
+
   const [albumData, setAlbumData] = useState({
     name: '',
     imageUrl: '',
@@ -16,16 +19,32 @@ const AddAlbumForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
     // Add logic to submit the new album data
     console.log('Submitted:', albumData);
+
+    // Simulate a delay (you can replace this with actual submission logic)
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    console.log('Submitted successfully:', albumData);
+
     // Clear form fields
     setAlbumData({
       name: '',
       imageUrl: '',
       artist: '',
     });
+
+} catch (error) {
+    console.error('Error submitting:', error);
+  }
+  };
+
+  const handleCancel = () => {
+    navigate(-1);
   };
 
   return (
@@ -54,6 +73,7 @@ const AddAlbumForm = () => {
           onChange={handleChange}
         />
         <button type="submit">Add Album</button>
+        <button type="button" onClick={handleCancel}>Cancel</button>
       </form>
     </div>
   );
