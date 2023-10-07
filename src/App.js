@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 import './style.css';
 // import NavBar from './Components/Navbar/Navbar';
@@ -14,6 +13,7 @@ function App() {
     <div className="App">
     {/* <NavBar /> */}
         <Routes> 
+        {/* <Route path="/" element={<NavBar />} /> */}
           <Route path="/" element={<AlbumList />} />
           <Route path="/add-album" element={<AddAlbumForm />} />
         </Routes> 

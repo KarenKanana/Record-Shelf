@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './TracksListing.css';
 import axios from 'axios';
 
-const TracksListing = ({ albumId }) => {
+const TracksListing = ({ albumId, filterOptions }) => {
   const [tracks, setTracks] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,25 @@ const TracksListing = ({ albumId }) => {
       }
     };
     fetchTracks();
-  }, [albumId]); // Include albumId in the dependency array
+  }, [albumId, filterOptions]); // Include albumId in the dependency array
+
+  const applyFilters = (track) => {
+    console.log(track);
+    if (filterOptions && filterOptions.filterType) {
+      if (filterOptions.filterType === "Album") {
+        return track.name
+          .toLowerCase()
+          .includes(filterOptions.searchText.toLowerCase());
+      } else if (filterOptions.filterType === "Artist") {
+        return track.artist
+          .toLowerCase()
+          .includes(filterOptions.searchText.toLowerCase());
+      }
+    }
+    return true;
+  };
+
+  const filteredTracks = tracks.filter((track) => applyFilters(track));
 
   return (
     <div className="tracks-list">
@@ -31,7 +49,7 @@ const TracksListing = ({ albumId }) => {
           </tr>
         </thead>
         <tbody>
-          {tracks.map((track) => (
+          {filteredTracks.map((track) => (
             <tr key={track.id}>
               <td>{track.id}</td>
               <td>{track.name}</td>
