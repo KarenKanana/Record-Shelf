@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import TracksListing from './TracksListing';
+import TracksListing from '../src/Components/TracksListing';
 
 const mockTracks = [
   { id: 1, name: 'Track 1', length: '3:45' },
