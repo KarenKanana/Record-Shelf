@@ -20,7 +20,7 @@ const NavBar = ({ onFilterChange }) => {
 
     <div className='mid-nav'>
       {/* Search Box */}
-        <div className='search-box'>
+        <div className='search-box' bg-red>
           <input type='text' placeholder='Search' value={searchText}
             onChange={(e) => setSearchText(e.target.value)}/>
 
@@ -29,16 +29,21 @@ const NavBar = ({ onFilterChange }) => {
 
         {/* Checkboxes */}
         <div className="filter-options">
-        <label>
-            Filter by:
-            <select
-              value={filterType}
-              onChange={(e) => setFilterType(e.target.value)}
-            >
-              <option value="Album">Album</option>
-              <option value="Artist">Artist</option>
-            </select>
-          </label>
+        <input
+            type="checkbox"
+            value="Album"
+            checked={filterType === "Album"}
+            onChange={() => setFilterType("Album")}
+          />
+          <label>Album</label>
+
+          <input
+            type="checkbox"
+            value="Artist"
+            checked={filterType === "Artist"}
+            onChange={() => setFilterType("Artist")}
+          />
+          <label>Artist</label>
         </div>
     </div>
     
