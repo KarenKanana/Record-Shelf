@@ -4,15 +4,16 @@ import './AlbumCard.css'
 //function that renders album information
 const AlbumCard = ({ album }) => {
   return (
-    <div className="album-card">
-      <div className="album-details">
+    <div className="album-card" class="container card mb-4 p-3">
+      <div className="album-details" class="card-body d-flex">
         <div >
-          <img src={album.imageUrl} alt={album.name} className='card-image' />
+          <img class="img-thumbnail rounded float-left" src={album.imageUrl} alt={album.name} className='card-image' />
           </div>
-        <div>
-          <h3>{album.name}</h3>
-          <p>{album.artist}</p>
-          <button>More Info</button>
+        <div className='text-left px-4 my-auto'>
+        <h3>ALBUM</h3>
+          <h1 class="card-title">{album.name}</h1>
+          <p class="card-subtitle text-black">By {album.artist}</p>
+          <i class="fa-solid fa-ellipsis"></i>
         </div>
       </div>
     <div className="tracks-table">
