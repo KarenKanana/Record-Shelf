@@ -16,59 +16,105 @@
     },
     {
       "id": 3,
-      "albumId": 3,
+      "albumId": 1,
       "name": "Track 3",
       "length": "3:30",
       "artist": "Thee Queen"
     },
     {
       "id": 4,
-      "albumId": 4,
+      "albumId": 1,
       "name": "Track 4",
-      "length": "3:55",
+      "length": "3:45",
       "artist": "Thee Queen"
     },
     {
       "id": 5,
-      "albumId": 5,
-      "name": "Track 5",
-      "length": "3:55",
-      "artist": "Thee Queen"
-    },
-    {
-      "id": 6,
       "albumId": 1,
-      "name": "Track 6",
-      "length": "4:10",
-      "artist": "Thee Queen"
-    },
-    {
-      "id": 7,
-      "albumId": 2,
-      "name": "Track 7",
+      "name": "Track 5",
       "length": "3:15",
       "artist": "Thee Queen"
     },
+
     {
-      "id": 8,
+      "id": 1,
+      "albumId": 2,
+      "name": "Track 1",
+      "length": "3:55",
+      "artist": "Macheroni"
+    },
+    {
+      "id": 2,
+      "albumId": 2,
+      "name": "Track 2",
+      "length": "3:55",
+      "artist": "Macheroni"
+    },
+    {
+      "id": 3,
+      "albumId": 2,
+      "name": "Track 3",
+      "length": "3:55",
+      "artist": "Macheroni"
+    },
+    
+    {
+      "id": 1,
       "albumId": 3,
-      "name": "Track 8",
-      "length": "4:45",
-      "artist": "Thee Queen"
+      "name": "Track 1",
+      "length": "3:55",
+      "artist": "Madaraka"
     },
     {
-      "id": 9,
+      "id": 2,
+      "albumId": 3,
+      "name": "Track 2",
+      "length": "3:05",
+      "artist": "Madaraka"
+    },
+    {
+      "id": 1,
       "albumId": 4,
-      "name": "Track 9",
-      "length": "3:40",
-      "artist": "Thee Queen"
+      "name": "Track 1",
+      "length": "3:55",
+      "artist": "Binky Man"
     },
     {
-      "id": 10,
+      "id": 2,
+      "albumId": 4,
+      "name": "Track 2",
+      "length": "4:55",
+      "artist": "Binky Man"
+    },
+    {
+      "id": 3,
+      "albumId": 4,
+      "name": "Track 3",
+      "length": "3:55",
+      "artist": "Binky Man"
+    },
+    {
+      "id": 1,
       "albumId": 5,
-      "name": "Track 10",
-      "length": "3:30",
-      "artist": "Thee Queen"
+      "name": "Track 1",
+      "length": "3:55",
+      "artist": "Riri Gurl"
+    },
+    {
+      "id": 2,
+      "albumId": 5,
+      "name": "Track 2",
+      "length": "3:55",
+      "artist": "Riri Gurl"
+    },
+    {
+      "id": 3,
+      "albumId": 5,
+      "name": "Track 3",
+      "length": "3:05",
+      "artist": "Riri Gurl"
     }
+
+   
   ]
 }
