@@ -48,7 +48,7 @@ const AddAlbumForm = () => {
   };
 
   return (
-    <div className="add-album-form">
+    <div className="add-album-form mt-4">
       <h2>Add New Album</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -72,8 +72,10 @@ const AddAlbumForm = () => {
           value={albumData.artist}
           onChange={handleChange}
         />
-        <button type="submit">Add Album</button>
-        <button type="button" onClick={handleCancel}>Cancel</button>
+        <div class="d-grid gap-2 d-md-block">
+          <button className="close btn btn-secondary" type="button" onClick={handleCancel}>Close</button>
+          <button class="btn btn-primary" type="button">Add Album</button>
+        </div>
       </form>
     </div>
   );

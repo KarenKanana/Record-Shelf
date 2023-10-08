@@ -39,21 +39,21 @@ const TracksListing = ({ albumId, filterOptions }) => {
   return (
     <div className="tracks-list">
       {/* <h2>Tracks</h2> */}
-      <table className='tracks-table'>
+      <table className='tracks-table' class="table table-dark table-striped w-100">
         <thead>
-          <tr>
-            <th>#</th>
-            <th>Title</th>
-            <th>Length</th>
+          <tr class="text-white">
+            <th class="text-center">#</th>
+            <th class="w-75">Title</th>
+            <th class="text-center">Length</th>
             {/* <th>Artist</th> */}
           </tr>
         </thead>
         <tbody>
           {filteredTracks.map((track) => (
             <tr key={track.id}>
-              <td>{track.id}</td>
+              <td class="text-center">{track.id}</td>
               <td>{track.name}</td>
-              <td>{track.length}</td>
+              <td class="text-center">{track.length}</td>
               {/* <td>{track.artist}</td> */}
             </tr>
           ))}
