@@ -1,3 +1,4 @@
+// Navbar.js
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
@@ -5,56 +6,65 @@ import { Link } from 'react-router-dom';
 const NavBar = ({ onFilterChange }) => {
   const [showForm, setShowForm] = useState(false);
   const [searchText, setSearchText] = useState("");
-  const [filterType, setFilterType] = useState("Album");
+  const [filterTypes, setFilterTypes] = useState([]);
 
   const toggleForm = () => {
     setShowForm(!showForm);
   };
 
   const handleSearch = () => {
-    onFilterChange({ searchText, filterType });
+    onFilterChange({ searchText, filterType: filterTypes });
+  };
+
+  const handleCheckboxChange = (value) => {
+    if (filterTypes.includes(value)) {
+      setFilterTypes(filterTypes.filter((type) => type !== value));
+    } else {
+      setFilterTypes([...filterTypes, value]);
+    }
   };
 
   return (
     <nav className="navbar">
-
-    <div className='mid-nav'>
-      {/* Search Box */}
-        <div className='search-box' bg-red>
-          <input type='text' placeholder='Search' value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}/>
+      <div className='mid-nav'>
+        <div className='search-box'>
+          <input
+            type='text'
+            placeholder='Search'
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
 
           <button onClick={handleSearch}>Search</button>
         </div>
 
         {/* Checkboxes */}
         <div className="filter-options">
-        <input
+          <input
             type="checkbox"
+            id="albumCheckbox"
             value="Album"
-            checked={filterType === "Album"}
-            onChange={() => setFilterType("Album")}
+            checked={filterTypes.includes("Album")}
+            onChange={() => handleCheckboxChange("Album")}
           />
-          <label>Album</label>
+          <label htmlFor="albumCheckbox">Album</label>
 
           <input
             type="checkbox"
             value="Artist"
-            checked={filterType === "Artist"}
-            onChange={() => setFilterType("Artist")}
+            checked={filterTypes.includes("Artist")}
+            onChange={() => handleCheckboxChange("Artist")}
           />
-          <label>Artist</label>
+          <label htmlFor="artistCheckbox">Artist</label>
         </div>
-    </div>
+      </div>
     
-
-    <div className='add-button'>
-        {/* Add New Album Button
-        Use Link for navigation */}
-        <Link to="/add-album" className="add-album-button">
-                Add New Album
-              </Link>
-    </div>
+      <div className='add-button'>
+      
+      <a className="add-album-button" href="/add-album">
+          Add New Album
+        </a>
+      </div>
     </nav>
   );
 };
