@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import albums from 'albums.js'; //import dummy data
-import './AlbumList.css' //import styling 
+import './AlbumList.css' 
 import AlbumCard from "../AlbumCard/AlbumCard";
 import NavBar from "../Navbar/Navbar";
 import TracksListing from "../TracksListing/TracksListing";
+
 
 
 
@@ -45,7 +45,7 @@ const AlbumList = () => {
           .includes(filterOptions.searchText.toLowerCase());
       }
     }
-    return true; // Show all albums if no specific filter is selected
+    return true; 
   };
 
   const filteredAlbums = albums.filter((album) => applyFilters(album));
@@ -60,13 +60,9 @@ const AlbumList = () => {
         <div>
       <NavBar onFilterChange={handleFilterChange} />
       <div className="album-list">
-        {/* /<h2>Albums</h2> */}
         <ul>
-          {albums.map((album) => (
+          {filteredAlbums.map((album) => (
             <li key={album.id}>
-              {/* <img src={album.imageUrl} alt={album.name} />
-              <h3>{album.name}</h3>
-              <p>{album.artist}</p> */}
               <AlbumCard album={album} />
             </li>
           ))}
