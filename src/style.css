@@ -1,10 +1,10 @@
 :root {
     /* Colors */
-    --first-color: #B88A67;
-    --first-color-dark: #8D6A4F;
-    --text-color: #524739;
-    --first-color-light: #D9BBA0;
-    --first-color-lighten: #E7CCB7;
+    --first-color: #000000;
+    --first-color-dark: #FF2D55;
+    --text-color: #000000;
+    --first-color-light: #000000;
+    --first-color-lighten: #000000;
   
     /* Fonts */
     --body-font: 'Poppins', sans-serif;
@@ -35,9 +35,15 @@
     --z-fixed: 100;
   }
   
-  /* Global styling here */
+  
+ 
   body {
+    margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color-lighten);
     color: var(--text-color);
-  }
+    line-height: 1.6;
+    width: 100%;
+}

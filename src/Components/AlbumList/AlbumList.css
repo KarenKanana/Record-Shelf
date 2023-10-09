@@ -1,0 +1,95 @@
+.album-list {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--first-color-lighten);
+    height: 100vh;
+    padding: 20px;
+      
+}
+  
+.album-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.album-list ul {
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+    max-width: 100%;
+    
+    
+}
+  
+.album-list li {
+    background-color: var(--first-color);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    box-sizing: border-box;
+    width: 1000px;
+    align-items: center;
+    
+
+}
+  
+.album-list img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+.album-list h3 {
+    font-size: 18px;
+    margin: 0;
+}
+  
+.album-list p {
+    font-size: 14px;
+    color: #888;
+}
+  
+.album-list li button {
+    background-color: var(--first-color-dark);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+  
+.album-list li button:hover {
+    background-color: var(--first-color-lighten);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .album-list li {
+      width: 100%;
+      margin: 10px 0; 
+    }
+  }
+  
+  /* Media Query for Mobile Devices (up to 767px) */
+  @media (max-width: 767px) {
+    .album-list {
+      padding: 10px; 
+    }
+  
+    .album-list li {
+      width: 100%;
+      margin: 10px 0; 
+      padding: 10px; 
+    }
+    
+    .album-list img {
+      height: auto;
+      width: 100%;
+    }
+  }

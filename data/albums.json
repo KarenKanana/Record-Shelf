@@ -1,0 +1,46 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "name": "Sunshine",
+      "imageUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80.jpg",
+      "artist": "Thee Queen"
+    },
+    {
+      "id": 2,
+      "name": "Midnight Dreams",
+      "imageUrl": "https://images.unsplash.com/photo-1516900448138-898720b936c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80.jpg",
+      "artist": "Macheroni"
+    },
+    {
+      "id": 3,
+      "name": "Eternal Echoes",
+      "imageUrl": "https://images.unsplash.com/photo-1500099817043-86d46000d58f?ixlib=rb-4.0.3&ixid=M3xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80.jpg",
+      "artist": "Madaraka"
+    },
+    {
+      "id": 4,
+      "name": "Infinite Twilight",
+      "imageUrl": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80.jpg",
+      "artist": "Binky Man"
+    },
+    {
+      "id": 5,
+      "name": "Serenity",
+      "imageUrl": "https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80.jpg",
+      "artist": "Riri Gurl"
+    },
+    {
+      "name": "Tears and Rainbows",
+      "imageUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWxidW0lMjBjb3ZlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "artist": "Nana",
+      "id": 6
+    },
+    {
+      "name": "",
+      "imageUrl": "",
+      "artist": "",
+      "id": 7
+    }
+  ]
+}

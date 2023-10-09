@@ -1,0 +1,98 @@
+.tracks-list {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tracks-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .tracks-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tracks-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .tracks-list span {
+    font-size: 16px;
+  }
+  
+  .tracks-list p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .tracks-table{
+    width: 100%;
+
+  }
+  .tracks-table th,
+.tracks-table td {
+  border: 1px solid #ccc; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+.tracks-table th {
+  background-color: var(--first-color); 
+}
+
+.tracks-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+.table th:nth-child(1), .table td:nth-child(1) {
+    width: 100px; 
+  }
+  
+  .text-center{
+    text-align: center;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .tracks-table th:nth-child(1),
+    .tracks-table td:nth-child(1) {
+      width: 100px;
+    }
+  }
+  
+  /* Media Query for Mobile Devices (up to 767px) */
+  @media (max-width: 767px) {
+    .tracks-table th,
+    .tracks-table td {
+      padding: 1px;
+     
+    }
+  
+    .tracks-list button {
+      font-size: 14px;
+      padding: 3px 6px;
+      width: 90px;
+    }
+    
+  }
+
+  /* Media Query for Galaxy Fold */
+@media (max-width: 280px) {
+  .tracks-list {
+    padding: 5px; 
+  }
+
+  .tracks-table th:nth-child(1),
+  .tracks-table td:nth-child(1) {
+    width: 50px; 
+  }
+
+  .tracks-list button {
+    font-size: 12px; 
+    padding: 2px 4px; 
+    width: 70px; 
+  }
+}

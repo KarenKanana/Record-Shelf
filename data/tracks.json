@@ -1,0 +1,118 @@
+{
+  "tracks": [
+    {
+      "id": 1,
+      "albumId": 1,
+      "name": "Forever with you",
+      "length": "3:45",
+      "artist": "Thee Queen"
+    },
+    {
+      "id": 2,
+      "albumId": 1,
+      "name": "Eternal Love",
+      "length": "4:20",
+      "artist": "Thee Queen"
+    },
+    {
+      "id": 3,
+      "albumId": 1,
+      "name": "Dance of the Stars",
+      "length": "3:30",
+      "artist": "Thee Queen"
+    },
+    {
+      "id": 4,
+      "albumId": 1,
+      "name": "Lost in Dreams",
+      "length": "3:45",
+      "artist": "Thee Queen"
+    },
+    {
+      "id": 5,
+      "albumId": 1,
+      "name": "Midnight Serenade",
+      "length": "3:15",
+      "artist": "Thee Queen"
+    },
+
+    {
+      "id": 1,
+      "albumId": 2,
+      "name": "Whispers in the Wind",
+      "length": "3:55",
+      "artist": "Macheroni"
+    },
+    {
+      "id": 2,
+      "albumId": 2,
+      "name": "Heartbeat Melody",
+      "length": "3:55",
+      "artist": "Macheroni"
+    },
+    {
+      "id": 3,
+      "albumId": 2,
+      "name": "Moonlight Sonata",
+      "length": "3:55",
+      "artist": "Macheroni"
+    },
+    
+    {
+      "id": 1,
+      "albumId": 3,
+      "name": "Sunrise Serenity",
+      "length": "3:55",
+      "artist": "Madaraka"
+    },
+    {
+      "id": 2,
+      "albumId": 3,
+      "name": "Mystical Journey",
+      "length": "3:05",
+      "artist": "Madaraka"
+    },
+    {
+      "id": 1,
+      "albumId": 4,
+      "name": "Forever with you",
+      "length": "3:55",
+      "artist": "Binky Man"
+    },
+    {
+      "id": 2,
+      "albumId": 4,
+      "name": "Eternal Love",
+      "length": "4:55",
+      "artist": "Binky Man"
+    },
+    {
+      "id": 3,
+      "albumId": 4,
+      "name": "Dance of the Stars",
+      "length": "3:55",
+      "artist": "Binky Man"
+    },
+    {
+      "id": 1,
+      "albumId": 5,
+      "name": "Lost in Dreams",
+      "length": "3:55",
+      "artist": "Riri Gurl"
+    },
+    {
+      "id": 2,
+      "albumId": 5,
+      "name": "Midnight Serenade",
+      "length": "3:55",
+      "artist": "Riri Gurl"
+    },
+    {
+      "id": 3,
+      "albumId": 5,
+      "name": "Whispers in the Wind",
+      "length": "3:05",
+      "artist": "Riri Gurl"
+    }
+  ]
+}
