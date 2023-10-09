@@ -2,6 +2,7 @@
   "name": "record-shelf",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,9 +16,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "demo-ui": "react-scripts start --name=DemoUI",
+    "demo-ui": "concurrently \"json-server --watch data/albums.json --port 8000\"  \"json-server --watch data/tracks.json --port 8001\" \"react-scripts start --name=DemoUI\"",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -37,5 +38,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "axios-mock-adapter": "^1.22.0",
+    "concurrently": "^8.2.1",
+    "mutationobserver-shim": "^0.3.7"
   }
 }
