@@ -35,7 +35,7 @@
     --z-fixed: 100;
   }
   
-  /* Global styling here */
+  
  
   body {
     margin: var(--header-height) 0 0 0;
@@ -45,4 +45,5 @@
     background-color: var(--first-color-lighten);
     color: var(--text-color);
     line-height: 1.6;
+    width: 100%;
 }
