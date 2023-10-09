@@ -1,17 +1,12 @@
 .album-list {
-    /* margin: 20px auto; */
-    max-width: 100vw;
+    max-width: 100%;
     margin: auto;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* align-items: center;   */
     background-color: var(--first-color-lighten);
     height: 100vh;
     padding: 20px;
-    /* overflow: auto; */
-    
-   
+      
 }
   
 .album-list h2 {
@@ -22,8 +17,6 @@
 .album-list ul {
     list-style: none;
     padding: 0;
-    /* display: flex;
-    flex-wrap: wrap; */
     gap: 20px;
     max-width: 100%;
     
@@ -46,7 +39,6 @@
 }
   
 .album-list img {
-    /* max-width: 50%; */
     height: 300px;
     width: 300px;
     border-radius: 5px;
@@ -77,3 +69,27 @@
 .album-list li button:hover {
     background-color: var(--first-color-lighten);
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+    .album-list li {
+      width: 100%;
+      margin: 10px 0; 
+    }
+  }
+  
+  /* Media Query for Mobile Devices (up to 767px) */
+  @media (max-width: 767px) {
+    .album-list {
+      padding: 10px; 
+    }
+  
+    .album-list li {
+      width: 100%;
+      margin: 10px 0; 
+      padding: 10px; 
+    }
+    
+    .album-list img {
+      height: auto;
+      width: 100%;
+    }
+  }

@@ -1,64 +1,87 @@
+/* AlbumCard.css */
 .album-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;  
-    width: 90%!important;
-     
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 90%!important;
+  margin: 20px auto; 
+  max-width: 400px; 
+}
 
+.album-card img {
+  max-width: 100%; 
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.album-card-info {
+  flex: 1;
+}
+
+.album-card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.album-card p {
+  font-size: 14px;
+  color: #888;
+}
+
+.album-card button {
+  background-color: var(--first-color-dark);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.album-card button:hover {
+  background-color: var(--first-color-lighten);
+}
+
+.album-details {
+  display: flex;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  height: 300px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 268px) {
+  .album-card {
+    width: 90%!important;
+    max-width: none; 
   }
-  
+
   .album-card img {
-    /* max-width: 150px; 
-    border-radius: 5px; */
-    margin-right: 20px; 
+    max-width: 100%; 
+    margin-right: 0; 
   }
-  
+
   .album-card-info {
-    flex: 1; 
+    flex: 1;
   }
-  
+
   .album-card h3 {
-    font-size: 18px;
-    margin: 0;
+    font-size: 16px; 
   }
-  
+
   .album-card p {
-    font-size: 14px;
-    color: #888;
+    font-size: 12px; 
   }
-  
-  .album-card button {
-    background-color: var(--first-color-dark);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .album-card button:hover {
-    background-color: var(--first-color-lighten);
-  }
-  
-  .album-details {
-    /* background-color: green; */
-    display: flex;
-    
-  }
-  .text-left{ 
-    text-align: left;
-    
-  }
-  
-  .card-image{
-    max-width: 100%;
-    height: auto;
-    width:300px;
-    height:300px;
-  }
-  
+}
